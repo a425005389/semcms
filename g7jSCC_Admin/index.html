@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎使用黑蚂蚁·SEMCMS外贸网站管理系统</title>
+<link rel="stylesheet" href="SC_Page_Config/Css/SC_Back.css" type="text/css" />
+<script charset="utf-8" src="SC_Page_Config/Js/tinybox.js"></script>
+</head>
+
+<body background="SC_Page_Config/Image/semcmsbg.jpg">
+<div class="back_index">
+	<div class="back_index_1"></div>
+    <div class="cb"></div>
+    <div class="back_index_2">
+    	<div class="back_index_2_c">
+        <form name="form" method="post" action="SEMCMS_Top_include.php?CF=users&Class=login">
+        	<ul>
+            	<li>账 号: 
+            	  <input type="text" name="UserName" onfocus="this.className='back_input2';" onkeypress="this.className='back_input';"  class="back_input" /></li><li>密 码: <input type="password" name="UserPass" class="back_input" onfocus="this.className='back_input2';" onkeypress="this.className='back_input';" /></li>
+                <li>
+                  <span id="yb"><input name="checkbox" type="checkbox" id="Rem" checked="checked" /> 
+                记住这个身份</span></li> 
+
+            </ul>
+            <ul><li style="text-align:right; margin-right:10px; float:right;"><a href="javascript:views();">如果忘记账号与密码,试试找回?</a><input type="image" style="width:70px; height:28px; border:0px;" src="SC_Page_Config/Image/SEMCMS_Longin.jpg" /></li></ul>
+        </form>
+        </div>
+    
+    </div>
+
+</div>
+<script type="text/javascript">
+function views(){TINY.box.show('SEMCMS_Remail.php?type=find',1,500,130,1)}
+
+if (Request("type")=="ok"){
+ var umail=Request("umail") ; 
+TINY.box.show('SEMCMS_Remail.php?type=ok&umail='+umail,1,500,230,1)    
+    
+}
+
+
+
+function Request(strName)
+{
+thisURL = decodeURIComponent(document.URL);
+strwrite = thisURL
+//document.write(strwrite);
+var strHref =strwrite;
+var intPos = strHref.indexOf("?");
+var strRight = strHref.substr(intPos + 1);
+var arrTmp = strRight.split("&");
+for(var i = 0; i < arrTmp.length; i++)
+{
+var arrTemp = arrTmp[i ].split("=");
+if(arrTemp[0].toUpperCase() == strName.toUpperCase()) return arrTemp[1];
+}
+return "";
+}
+</script> 
+</body>
+</html>

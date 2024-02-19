@@ -1,0 +1,32 @@
+
+欢迎使用semcms外贸网站系统！
+
+semcms php 版外贸网站 
+开发者：黑蚂蚁.阿梁开发 
+        联系QQ:1181698019
+        微信公众号：sem-cms
+        加入微信公众号可随时关注系统升级信息！
+
+官网：http://www.sem-cms.com/
+演示地址：http://php.sem-cms.com/
+
+帮助文档：http://www.sem-cms.com/talk/?bigid=8
+
+本系统默认账号：Admin
+          默认密码：1
+
+
+Semcms-php-v4.8修复
+
+1.修复网站后台编辑器上传图片白屏
+2.修复其他细节
+ 
+
+更新文件：
+A_Admin/SEMCMS_Top_include.php
+Edit/kindeditor.js
+ 
+ 
+
+  
+
